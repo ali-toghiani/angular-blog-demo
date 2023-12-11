@@ -1,0 +1,112 @@
+.footer-container{
+  min-height: 336px;
+  background-color: var(--footer-bg);
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 80px;
+
+  color: white;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+
+  .footer-inner-container{
+    max-width: 781px;
+    padding-inline: 15px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 700px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr))
+    }
+
+    a{
+      cursor: pointer;
+      &:hover{
+        color: var(--blue);
+      }
+    }
+    .footer-column {
+      min-width: fit-content;
+      display: flex;
+      flex-direction: column;
+      .footer-title{
+        margin-bottom: 25px;
+        padding-top: 43px;
+      }
+      .footer-row{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+    }
+
+    .footer-company-name {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      padding-top: 14px;
+      margin-bottom: 22px;
+      color: #FFF;
+      text-align: center;
+      font-family: Mulish;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      .footer-company-name-dot {
+        color: var(--blue);
+        font-size: 48px;
+      }
+    }
+
+  }
+
+  .newsletter-column {
+    margin-top: 37px;
+    .footer-newsletter-container {
+      position: relative;
+
+      .footer-newsletter-input {
+        min-width: 300px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 56px;
+        &::placeholder {
+          padding-inline-start: 16px;
+          color: var(--blue);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+        }
+      }
+      .hover-image {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    }
+
+    .footer-subscribe {
+      margin-bottom: 17px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 163.15%;
+    }
+  }
+}
+

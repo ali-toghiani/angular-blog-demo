@@ -1,0 +1,197 @@
+.blog-container{
+  max-width: 900px;
+  padding-inline: 15px;
+  padding-top: 200px;
+  padding-bottom: 160px;
+  width: 100%;
+  margin-inline: auto;
+
+  @media only screen and (max-width: 700px) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .blog-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .blog-inner-container{
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .blog-title {
+      margin: 0;
+      max-width: 700px;
+      color: var(--black, #25313C);
+      font-family: Mukta;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+    .author-section {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+
+      color: var(--gray);
+      font-family: Mulish;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150.6%;
+
+      .author-name{
+        margin-inline-end: 10px;
+      }
+      .created-date {
+        margin-inline-start: 15px;
+      }
+      .author-avatar{
+        border-radius: 50%;
+        margin-inline-end: 20px;
+      }
+    }
+
+    .blog-image{
+      margin-top: 60px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .blog-main-text{
+      margin-top: 60px;
+      color: var(--black, #25313C);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 163.15%;
+      white-space: pre-line;
+    }
+
+    .blog-written-by {
+      margin-top: 56px;
+      margin-inline-start: 12px;
+      align-self: start;
+      display: flex;
+      column-gap: 15px;
+
+      .blog-author-avatar{
+        border-radius: 50%;
+      }
+
+      .blog-written-by-text-container {
+        display: flex;
+        flex-direction: column;
+
+        .written-by-title{
+          color: var(--dark-blue);
+          font-family: Mulish;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+        }
+
+        .written-by-author-name {
+          color: var(--black);
+          font-family: Mulish;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+
+    .blog-horizontal-line{
+      width: 100%;
+      height: 1px;
+      margin-top: 106px;
+      background: hsla(208, 12%, 49%, 0.22);
+
+    }
+
+    .blog-comment-section {
+      padding-top: 25px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      .blog-comment {
+        padding: 20px;
+        width: 100%;
+        background: white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        .comment-avatar {
+          align-self: start;
+          border-radius: 50%;
+        }
+        .comment-message {
+          margin-top: 10px;
+        }
+        .comment-name-date{
+          display: flex;
+          column-gap: 15px;
+          color: var(--gray);
+          font-family: Mulish;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150.6%;
+        }
+      }
+
+      .load-comments-btn{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-inline: auto;
+        padding-inline: 20px;
+      }
+    }
+
+    .blog-create-comment{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .create-comment-title{
+        color: var(--gray);
+        font-family: Mulish;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+
+      .create-comment-container{
+        display: flex;
+        column-gap: 15px;
+        .comment-avatar{
+          border-radius: 50%;
+        }
+
+        .create-comment-text-area{
+          width: 100%;
+          border-radius: 4px;
+          border-color: var(--gray);
+          border: 2px solid var(--light-grey, #BBC8D4);
+          background: var(white, #FFF);
+          min-height: 148px;
+          font-family: Mulish;
+          font-size: 14px;
+          color: var(--blue);
+          padding: 10px 5px;
+        }
+      }
+      .submit-comment-btn{
+        margin-top: 10px;
+        align-self: end;
+        padding-inline: 20px;
+      }
+    }
+  }
+}
